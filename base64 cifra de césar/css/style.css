@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to right, rgb(2, 64, 89), rgb(85, 25, 255)) ;
+    color: white;
+}
+
+#box{
+     background-color: rgba(0, 0, 0, .7);
+     top: 50%;
+     left: 50%;
+     padding: 15px;
+     border-radius: 15px;
+     width: 20%;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+fieldset{
+    border-radius: 5px;
+    border: 3px solid dodgerblue;
+}
+
+h1 {
+    margin: 0;
+}
+
+#cesar, #base {
+    display: none;
+}
+
+#input-original, #resultado, #resultadoBase64, #input-original-Base64 {
+    background-color:#fff;
+    width: -webkit-fill-avaliable;
+}
+
+#input-original, #input-original-Base64 {
+    margin: 10px 0 0;
+    padding: 10px;
+    color: #000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#resultado, #resultadoBase64 {
+    height: 20px;
+    padding: 0 10px 10px;
+    color: #000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;   
+    
+}
+
+#resultado {
+    text-transform: uppercase; 
+}
+
+#desloca {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    text-align: center;
+    align-items: center;
+}
+
+input[type='range'] {
+    -webkit-appearance: none;
+    border-radius: 4px;
+    background-color: #292b36;
+    margin: 0;
+    padding: 0 5px;
+    height: 20px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    cursor: pointer;
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+#codOuDecod, #codOuDecodBase {
+    background: #292b36;
+    height: 30px;
+    color: dodgerblue;
+    font-family: 'Source Code Pro', monospace;
+    cursor: pointer;
+}
+
+
+
